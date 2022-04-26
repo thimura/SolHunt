@@ -1,0 +1,68 @@
+.modalStyle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 35%;
+	background-color: white;
+	/* border: 2px solid #000; */
+	padding: 20px 20px 20px 90px;
+}
+
+.BrFormInputBox {
+	font-size: 2rem;
+	width: 85%;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 3px solid var(--search-bg);
+	background: rgb(219, 219, 219);
+}
+
+.BrFormInputBox:focus {
+	border: 3px solid var(--highlight);
+	outline: none;
+}
+
+.bookRequestButton {
+	background: rgb(235, 106, 106);
+}
+
+.bookRequestButton {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1;
+	border-radius: 500px;
+	transition-property: background-color, border-color, color, box-shadow, filter;
+	transition-duration: 0.3s;
+	border: 1px solid transparent;
+	letter-spacing: 2px;
+	min-width: 160px;
+	text-transform: uppercase;
+	white-space: normal;
+	font-weight: 700;
+	text-align: center;
+	padding: 17px 48px;
+	color: #fff;
+	background-color: rgb(235, 106, 106);
+	height: 48px;
+}
+.bookRequestButton:hover {
+	transform: scale(1.04);
+	background-color: rgb(235, 106, 106);
+}
+
+.spacing {
+	padding-right: 5px;
+	font-weight: 600;
+}
+
+.iconColor {
+	color: black;
+}
+
+.drawerStyle{
+	outline: black 1px solid;
+}
+

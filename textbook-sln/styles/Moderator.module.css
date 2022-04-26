@@ -1,0 +1,221 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.container > * {
+	width: 100%;
+}
+
+.container h2 {
+	font-size: xx-large;
+}
+
+.container h3 {
+	font-size: 1.75rem;
+}
+
+.container ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*  SEARCH BAR  */
+.updateContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	--highlight: rgb(0, 0, 0);
+	--search-bg: rgb(219, 219, 219);
+}
+
+.searchBar {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: 3px solid var(--search-bg);
+	background: var(--search-bg);
+}
+
+.searchBar::placeholder {
+	color: rgb(102, 102, 102);
+}
+
+.searchBar:focus {
+	border: 3px solid var(--highlight);
+	outline: none;
+}
+
+.addBook {
+	background: rgb(105, 189, 119);
+}
+
+.bookResults {
+	border: 2px solid black;
+	padding: 0.5rem 0;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+.book {
+	padding: 1rem;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+}
+
+.book:hover {
+	background-color: rgb(240, 239, 239);
+}
+
+.bookTitle {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.bookActions {
+	display: flex;
+	gap: 1rem;
+}
+
+.deleteRequestedBook,
+.editBook,
+.deleteBook {
+	font-size: 1.5rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.editBook:hover {
+	color: rgb(106, 166, 235);
+}
+
+.deleteBook:hover {
+	color: rgb(226, 73, 73);
+}
+
+.itemLists {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 1;
+	gap: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+	.itemLists {
+		flex-direction: row;
+	}
+
+	.itemLists > * {
+		flex-grow: 1;
+	}
+}
+
+.requestedBooks,
+.flaggedAnswers {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	border-radius: 3px;
+	border: 2px solid black;
+	padding: 1.25rem;
+	position: relative;
+}
+
+.requestedBooks ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.flaggedAnswers ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.emptyText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.emptyText > * {
+	color: rgb(179, 179, 179);
+	font-size: 1.75rem;
+	font-weight: 300;
+}
+
+.requestedBook {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: large;
+	padding: 0.25rem;
+	padding-left: 0.5rem;
+	border-radius: 3px;
+	pointer-events: none;
+	transition: background 200ms;
+}
+
+.requestedBook:hover {
+	background: rgb(253, 235, 232);
+}
+
+.deleteRequestedBook {
+	pointer-events: auto;
+	transition: color 200ms;
+}
+
+.deleteRequestedBook:hover {
+	color: rgb(226, 73, 73);
+}
+
+.flaggedAnswer {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-size: large;
+	/* padding: 0 0.5rem; */
+}
+
+.flagCount {
+	width: max-content;
+	background: rgb(253, 235, 232);
+	color: rgb(226, 73, 73);
+	border-radius: 5px;
+	padding: 0.5rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.bookLink {
+	width: max-content;
+	background: rgb(220, 239, 250);
+	color: rgb(36, 39, 212);
+	border-radius: 5px;
+	padding: 0.5rem;
+	margin-right: 2rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	left: 8rem;
+}
+
+.bookLink:hover{
+	background: rgb(0, 162, 255);
+	color: rgb(255, 255, 255);
+}
+
+.flaggedBtns {
+	display: flex;
+	flex-direction: row;
+}

@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1rem;
+	box-shadow: 0px 1px 10px 1px rgb(197, 197, 197);
+	border-radius: 3px;
+}
+
+.solution {
+	font-size: 2rem;
+}
+
+.float_container {
+    padding: 2px;
+}
+
+.float_child1 {
+    width: 15%;
+    float: left;
+    padding: 0px;
+}  
+
+.float_child2 {
+    width: 15%;
+    float: left;
+    padding: 0px;
+	cursor: pointer;
+}  
+
+.float_child2:hover {
+	color: var(--highlight);
+}

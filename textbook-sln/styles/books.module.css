@@ -1,0 +1,46 @@
+.container {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	--highlight: rgb(235, 106, 106);
+}
+
+.navigatorContainer {
+	border: 2px solid black;
+}
+
+.branches {
+	width: min(40rem, 100%);
+	height: max-content;
+	overflow-y: auto;
+}
+
+.branch {
+	font-size: 1.5rem;
+	padding: 0.75rem 1rem;
+}
+
+.branchHeader {
+	cursor: pointer;
+	text-transform: capitalize;
+}
+
+.branchHeader:hover {
+	color: var(--highlight);
+}
+
+.branchTitle {
+	margin-left: 0.5rem;
+	font-weight: bold;
+}
+
+.question {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.question:hover {
+	color: var(--highlight);
+}
