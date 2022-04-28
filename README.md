@@ -1,6 +1,9 @@
 # SolHunt
 
-## Current Contributors:
+## Important:
+This project was developed by all the contributors below, and I added it to one of my repositories because the original was going to be deleted. Every person in the list below contributed in some way to the code and documentation in this repository.
+
+## Contributors:
 Yousef Akiba  
 Thivagar Nadarajan  
 Thiago Vidal Murakami  
